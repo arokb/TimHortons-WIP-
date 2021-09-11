@@ -1,0 +1,101 @@
+<!--
+Author: Arok Anwar
+Date: 2021-03-23
+Instructor: Muath Alzghool
+Course Code: PROG10199
+Assignment 4
+
+Description: 2 Html Forms for to take in users orders
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css" type="text/css"> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A4</title>
+</head>
+<body id="htmlBody">
+    <img src="http://localhost/Tims/TimHortonsImages/Logo.jpg" alt="" srcset="" id="logo" />
+    <br>
+    <h2>Welcome to Tim Hortons</h2>
+    <br>
+
+    <h3>Give us some numbers</h3>
+    <br>
+    <form action="output.php" method="POST">
+        <label for="numCoffee">Number of Coffees</label>
+        <input name="coffees" type="number" min="0" max="100" required>
+    <br>
+    <br>
+    <label for="size">size</label>
+    <select name="size" id="" required>
+        <option id="smallCof" value="Small">Small</option>
+        <option id="medCof" value="Medium">Medium</option>
+        <option id="largeCof" value="Large">Large</option>
+        <option id="extra" value="extraLarge">Extra Large</option>
+    </select>
+    <br><br>
+    <label for="numCreams">How many Creams?: </label>
+        <input name="numberOfCreams" type="number" min="0" max="100" required >
+    <br><br>
+    <label for="numSugar">How many Sugars?: </label>
+        <input name="sugars" type="number" min="0" max="100" value="valueCream" required >
+        <br><br>
+    
+    <button name="btn1" type="submit">Order Coffee</button>
+    <br><br>
+    <button type="reset">Clear order</button>
+    </form>
+    <br><br>
+
+    Or use the slang
+
+    <br><br>
+
+    <form action="output.php" method="POST">
+        <label for="slangAmounts">Number of Coffees</label>
+            <input name="slangNumber" type="number" min="0" max="100">
+        <br>
+        <label for="size">Select Size</label>
+            <select name="slangSizes" id="">
+                    <option value="slangSmall">Small</option>
+                    <option value="slangMedium">Medium</option>
+                    <option value="slangLarge">Large</option>
+                    <option value="slangExtra">Extra Large</option>
+            </select>
+            <br><br>
+
+            <input type="radio" id="reg" name="Coffee" value="regular">
+                <label for="slangRegular">regular</label><br>
+            <br>
+            <input type="radio" id="double" name="Coffee" value="doubleDouble">
+                <label for="slangDouble">Double Double</label><br>
+            <br>
+            <input type="radio" id="triple" name="Coffee" value="tripleTriple">
+                    <label for="slangTriple">Triple Triple</label><br>
+            <br>
+            <input type="radio" id="black" name="Coffee" value="Black">
+                <label for="slangBlack">Black</label><br>
+            <br>
+            <input type="radio" id="BlackOneSugar" name="Coffee" value="blackOneSugar">
+                <label for="slangBlackOneSugar">Black One Sugar</label><br>
+            <br>
+            <input type="radio" id="BlackTwoSugar" name="Coffee" value="blackTwoSugar">
+                <label for="slangBlackTwoSugar">Black Two Sugar</label><br>
+            <br>
+            <input type="radio" id="BlackThreeSugar" name="Coffee" value="blackThreeSugar">
+                <label for="slangBlackThreeSugar">Black Three Sugar</label><br>
+
+        <br><br>
+        <button type="submit" name="btn2">Order Coffee</button>
+        <br>
+        <button type="reset">reset</button>
+
+    </form>
+    
+</body>
+</html>

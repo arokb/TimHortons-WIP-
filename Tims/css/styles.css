@@ -1,0 +1,55 @@
+/*
+<!--
+Author: Arok Anwar
+Date: 2021-03-23
+Instructor: Muath Alzghool
+Course Code: PROG10199
+Assignment 4
+
+Description: 2 Html Forms for to take in users orders
+-->
+*/
+#h1php{
+    background-color:red;
+    text-align: center;
+}
+
+#smallCoff{
+    width: 80px;
+    height: 80px;
+}
+
+#medCoff{
+    width: 160px;
+    height: 160px;
+}
+
+#largeCoff{
+    width: 240px;
+    height: 240px;
+}
+
+
+#extraCoff{
+    width: 280px;
+    height: 300px;
+}
+
+#htmlBody{
+    background-color: burlywood;
+}
+
+#logo{
+    margin-left: 500px;
+    margin-right: 500px;
+    width: 350px;
+    height: 350px;
+}
+
+#phpBody{
+    background-color: burlywood;
+}
+
+#extras{
+    font-size: 200px;
+}
